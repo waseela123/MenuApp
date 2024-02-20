@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etUsernameLogin"
+            android:layout_width="272dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="141dp"
+            android:layout_marginBottom="351dp"
+            android:ems="10"
+            android:hint="username.."
+            android:inputType="textEmailAddress"
+            android:layout_constraintBottom_toTopOf="@+id/tvSignupLinkLogin"
+            android:layout_constraintEnd_toEndOf="parent"
+            android:layout_constraintStart_toStartOf="parent"
+            android:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="272dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="95dp"
+            android:ems="10"
+            android:hint="password..."
+            android:inputType="textPassword"
+            android:layout_constraintBottom_toTopOf="@+id/btnLoginLogin"
+            android:layout_constraintEnd_toEndOf="parent"
+            android:layout_constraintHorizontal_bias="0.0"
+            android:layout_constraintStart_toStartOf="@+id/etUsernameLogin"
+            android:layout_constraintTop_toBottomOf="@+id/etUsernameLogin" />
+
+        <Button
+            android:id="@+id/btnLoginLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:text="Login"
+            android:layout_constraintEnd_toEndOf="parent"
+            android:layout_constraintStart_toStartOf="parent"
+            android:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
+
+        <TextView
+            android:id="@+id/tvSignupLinkLogin"
+            android:layout_width="71dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="129dp"
+            android:text="Signup..."
+            android:layout_constraintBottom_toBottomOf="parent"
+            android:layout_constraintEnd_toEndOf="parent"
+            android:layout_constraintHorizontal_bias="0.526"
+            android:layout_constraintStart_toStartOf="parent"
+            android:layout_constraintTop_toBottomOf="@+id/etUsernameLogin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
